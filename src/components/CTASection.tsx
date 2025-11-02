@@ -29,13 +29,6 @@ const CTASection = () => {
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto space-y-10 animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-5 py-3 rounded-full border border-white/30">
-            <Sparkles className="h-5 w-5 text-white animate-glow" />
-            <span className="text-sm font-bold text-white tracking-wide">
-              Experiência Premium Aguarda
-            </span>
-          </div>
-
           <h2 className="text-5xl md:text-7xl font-bold text-white leading-tight">
             Pronto para sua próxima
             <br />
@@ -52,20 +45,20 @@ const CTASection = () => {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="group relative overflow-hidden bg-white hover:bg-white/90 text-primary font-bold text-xl px-12 py-8 rounded-full shadow-2xl hover:shadow-gold-glow transition-all duration-500 hover:scale-110"
+              className="group relative overflow-hidden bg-white hover:bg-white/90 text-primary uppercase font-bold text-xl px-12 py-8 rounded-full shadow-2xl hover:shadow-gold-glow transition-all duration-500 hover:scale-110"
             >
               <Plane className="mr-3 h-6 w-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-              <span className="relative z-10">Solicitar Orçamento VIP</span>
+              <span className="relative z-10">SOLICITAR ORÇAMENTO VIP</span>
             </Button>
             
             <Button
               onClick={handleWhatsApp}
               size="lg"
               variant="outline"
-              className="border-3 border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-primary font-bold text-xl px-12 py-8 rounded-full shadow-xl transition-all duration-500 hover:scale-110"
+              className="border-3 border-white bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-primary uppercase font-bold text-xl px-12 py-8 rounded-full shadow-xl transition-all duration-500 hover:scale-110"
             >
               <MessageCircle className="mr-3 h-6 w-6" />
-              Atendimento Imediato
+              ATENDIMENTO IMEDIATO
             </Button>
           </div>
 
@@ -73,15 +66,11 @@ const CTASection = () => {
           <div className="flex flex-wrap justify-center gap-8 pt-12 text-white/90">
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 bg-white rounded-full shadow-lg animate-glow"></div>
-              <span className="font-semibold">Consultoria Premium</span>
+              <span className="font-semibold">Consultoria Especializada</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 bg-white rounded-full shadow-lg animate-glow"></div>
-              <span className="font-semibold">Suporte VIP 24/7</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-white rounded-full shadow-lg animate-glow"></div>
-              <span className="font-semibold">Experiências Exclusivas</span>
+              <span className="font-semibold">Segunda à sábado — 08:00 às 19:30</span>
             </div>
           </div>
         </div>

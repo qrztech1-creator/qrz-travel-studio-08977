@@ -39,10 +39,6 @@ const WhyChoose = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20 animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-secondary/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-secondary/30">
-            <Award className="h-4 w-4 text-secondary animate-glow" />
-            <span className="text-sm font-semibold text-secondary">Diferenciais Premium</span>
-          </div>
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight">
             Por Que Escolher a QRZ?
           </h2>

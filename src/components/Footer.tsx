@@ -97,7 +97,7 @@ const Footer = () => {
                     (21) 99999-9999
                   </p>
                   <p className="text-accent-foreground/60 text-sm">
-                    Atendimento VIP 24/7
+                    Segunda à sábado — 08:00 às 19:30
                   </p>
                 </div>
               </li>
@@ -105,10 +105,21 @@ const Footer = () => {
                 <Mail className="h-5 w-5 text-secondary flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-accent-foreground/90 font-medium break-all">
-                    contato@turismosqrz.com.br
+                    thiago@qrztech.com
                   </p>
                   <p className="text-accent-foreground/60 text-sm">
-                    Consultoria Premium
+                    Email de contato
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Instagram className="h-5 w-5 text-secondary flex-shrink-0 mt-1" />
+                <div>
+                  <p className="text-accent-foreground/90 font-medium">
+                    @othiagoqrz
+                  </p>
+                  <p className="text-accent-foreground/60 text-sm">
+                    Instagram
                   </p>
                 </div>
               </li>
@@ -154,7 +165,7 @@ const Footer = () => {
               reservados.
             </p>
             <p className="text-accent-foreground/70 text-sm text-center md:text-right">
-              Desenvolvido com excelência por <span className="text-secondary font-semibold">Thiago Manhães</span>
+              Desenvolvido por <a href="https://qrztech.com" target="_blank" rel="noopener noreferrer" className="text-secondary font-semibold hover:underline">QRZ Tech</a>
             </p>
           </div>
         </div>

@@ -52,12 +52,8 @@ const Services = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20 animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary/10 to-secondary/10 px-4 py-2 rounded-full mb-6">
-            <Sparkles className="h-4 w-4 text-primary animate-glow" />
-            <span className="text-sm font-semibold text-primary">Serviços Premium</span>
-          </div>
           <h2 className="text-5xl md:text-6xl font-bold text-accent mb-6 tracking-tight">
-            Experiências Exclusivas
+            Nossos Serviços
           </h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto mb-8 rounded-full"></div>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-light">
@@ -71,7 +67,7 @@ const Services = () => {
             return (
               <div
                 key={index}
-                className="group relative bg-card rounded-3xl p-8 hover-lift shadow-card border border-border overflow-hidden"
+                className="group relative bg-card rounded-3xl p-8 hover-lift shadow-card border border-border overflow-hidden flex flex-col min-h-[420px]"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Hover glow effect */}
@@ -85,15 +81,15 @@ const Services = () => {
                 <h3 className="text-2xl font-bold mb-4 text-accent group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed flex-grow">
                   {service.description}
                 </p>
                 <Button
                   onClick={scrollToContact}
                   variant="outline"
-                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-300 rounded-xl font-semibold"
+                  className="w-full group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-300 rounded-xl uppercase font-bold mt-auto"
                 >
-                  {service.action}
+                  COTAR AGORA
                 </Button>
               </div>
             );

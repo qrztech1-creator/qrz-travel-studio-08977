@@ -89,12 +89,8 @@ const Packages = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary/10 to-secondary/10 px-4 py-2 rounded-full mb-6">
-            <Sparkles className="h-4 w-4 text-secondary animate-glow" />
-            <span className="text-sm font-semibold text-primary">Ofertas Exclusivas</span>
-          </div>
           <h2 className="text-5xl md:text-6xl font-bold text-accent mb-6 tracking-tight">
-            Pacotes Premium
+            Pacotes Selecionados
           </h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto mb-8 rounded-full"></div>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-light">
@@ -152,9 +148,9 @@ const Packages = () => {
                   <p className="text-white/90 mb-6 font-light">{pkg.highlight}</p>
                   <Button
                     onClick={scrollToContact}
-                    className="w-full bg-white/20 backdrop-blur-sm border border-white/40 text-white hover:bg-white hover:text-primary font-bold rounded-xl transition-all duration-300"
+                    className="w-full bg-white/20 backdrop-blur-sm border border-white/40 text-white hover:bg-white hover:text-primary uppercase font-bold rounded-xl transition-all duration-300"
                   >
-                    Consultar Disponibilidade
+                    COTAR AGORA
                   </Button>
                 </div>
               </div>

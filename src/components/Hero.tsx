@@ -19,34 +19,22 @@ const Hero = () => {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image with Premium Overlay */}
+      {/* Background Image with Lighter Overlay */}
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
           alt="Viagem dos sonhos"
-          className="w-full h-full object-cover scale-105 animate-float"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0" style={{ background: 'var(--gradient-hero)' }}></div>
-        
-        {/* Animated Plane */}
-        <div className="absolute top-20 left-0 w-full overflow-hidden opacity-20">
-          <Plane className="h-24 w-24 text-white animate-float" style={{ animationDuration: '8s' }} />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/35 to-accent/30"></div>
       </div>
 
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center text-white py-32">
         <div className="max-w-5xl mx-auto space-y-10 animate-fade-in">
-          <div className="inline-flex items-center gap-3 bg-white/15 backdrop-blur-md px-5 py-3 rounded-full border border-white/30 shadow-lg hover:bg-white/20 transition-all duration-300">
-            <Sparkles className="h-5 w-5 text-secondary animate-glow" />
-            <span className="text-sm font-semibold tracking-wide">
-              Experiências Exclusivas em Viagens Premium
-            </span>
-          </div>
-
           <h1 className="text-6xl md:text-8xl font-bold leading-tight text-balance tracking-tight">
             Transforme seus{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-secondary-dark animate-glow">
+            <span className="highlight-word">
               sonhos
             </span>{" "}
             em realidade
@@ -61,21 +49,21 @@ const Hero = () => {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="group relative overflow-hidden bg-gradient-to-r from-secondary to-secondary-dark hover:shadow-gold-glow text-secondary-foreground font-bold text-lg px-10 py-7 rounded-full shadow-2xl transition-all duration-500 hover:scale-105 animate-gradient"
+              className="group relative overflow-hidden bg-gradient-to-r from-secondary to-secondary-dark hover:shadow-gold-glow text-secondary-foreground uppercase font-bold text-lg px-10 py-7 rounded-full shadow-2xl transition-all duration-500 hover:scale-105 animate-gradient"
             >
               <span className="relative z-10 flex items-center gap-2">
                 <Plane className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                Solicitar Orçamento Premium
+                SOLICITAR ORÇAMENTO PREMIUM
               </span>
             </Button>
             <Button
               onClick={handleWhatsApp}
               size="lg"
               variant="outline"
-              className="bg-white/10 backdrop-blur-sm border-2 border-white/40 text-white hover:bg-white hover:text-primary font-bold text-lg px-10 py-7 rounded-full shadow-xl transition-all duration-500 hover:scale-105"
+              className="bg-white/10 backdrop-blur-sm border-2 border-white/40 text-white hover:bg-white hover:text-primary uppercase font-bold text-lg px-10 py-7 rounded-full shadow-xl transition-all duration-500 hover:scale-105"
             >
               <MessageCircle className="mr-2 h-5 w-5" />
-              Atendimento VIP
+              ATENDIMENTO VIP
             </Button>
           </div>
 
@@ -87,11 +75,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-secondary rounded-full animate-glow"></div>
-              <span className="text-sm font-medium">Suporte 24/7</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-secondary rounded-full animate-glow"></div>
-              <span className="text-sm font-medium">Experiências Exclusivas</span>
+              <span className="text-sm font-medium">Segunda à sábado — 08:00 às 19:30</span>
             </div>
           </div>
         </div>

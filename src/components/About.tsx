@@ -10,10 +10,6 @@ const About = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20 animate-fade-in">
-          <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-6">
-            <Star className="h-4 w-4 text-primary" />
-            <span className="text-sm font-semibold text-primary">Excelência em Viagens Premium</span>
-          </div>
           <h2 className="text-5xl md:text-6xl font-bold text-accent mb-6 tracking-tight">
             Sobre a Turismos QRZ
           </h2>

@@ -50,7 +50,6 @@ All colors MUST be HSL.
     /* Premium Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(225 90% 50%), hsl(225 90% 65%));
     --gradient-gold: linear-gradient(135deg, hsl(45 100% 58%), hsl(38 90% 45%));
-    --gradient-hero: linear-gradient(135deg, hsl(225 90% 50% / 0.92), hsl(220 40% 20% / 0.88));
     --gradient-cta: linear-gradient(90deg, hsl(225 90% 50%), hsl(16 100% 60%));
     --gradient-cta-animated: linear-gradient(-45deg, hsl(225 90% 50%), hsl(225 90% 65%), hsl(16 100% 60%), hsl(38 90% 45%));
     --gradient-overlay: linear-gradient(135deg, hsl(220 40% 20% / 0.85), hsl(225 90% 50% / 0.7));
@@ -159,6 +158,15 @@ All colors MUST be HSL.
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  
+  .highlight-word {
+    background: linear-gradient(90deg, hsl(45 100% 58%), hsl(38 90% 45%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+    display: inline-block;
   }
 }
 
