@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Premium Color Palette - Luxo Moderno */
+    --background: 0 0% 100%;
+    --foreground: 220 20% 15%;
+    
+    /* Primary - Azul Royal Premium */
+    --primary: 225 90% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 225 100% 25%;
+    --primary-light: 225 100% 97%;
+    --primary-glow: 225 90% 65%;
+    
+    /* Secondary - Dourado Suave */
+    --secondary: 45 100% 58%;
+    --secondary-foreground: 220 20% 15%;
+    --secondary-dark: 38 90% 45%;
+    
+    /* Accent - Azul Profundo */
+    --accent: 220 40% 20%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Neutral Colors */
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 45%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+    
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 225 90% 50%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --radius: 1rem;
+    
+    /* Premium Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(225 90% 50%), hsl(225 90% 65%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 100% 58%), hsl(38 90% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(225 90% 50% / 0.92), hsl(220 40% 20% / 0.88));
+    --gradient-cta: linear-gradient(90deg, hsl(225 90% 50%), hsl(16 100% 60%));
+    --gradient-cta-animated: linear-gradient(-45deg, hsl(225 90% 50%), hsl(225 90% 65%), hsl(16 100% 60%), hsl(38 90% 45%));
+    --gradient-overlay: linear-gradient(135deg, hsl(220 40% 20% / 0.85), hsl(225 90% 50% / 0.7));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(225 100% 98%));
+    --gradient-dark: linear-gradient(135deg, hsl(220 50% 12%), hsl(220 40% 20%));
+    
+    /* Premium Shadows with Glow */
+    --shadow-sm: 0 2px 8px hsl(225 90% 50% / 0.08);
+    --shadow-md: 0 4px 16px hsl(225 90% 50% / 0.12);
+    --shadow-lg: 0 10px 40px hsl(225 90% 50% / 0.2);
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.06);
+    --shadow-card-hover: 0 12px 40px rgba(0, 0, 0, 0.12);
+    --shadow-glow: 0 0 40px hsl(225 90% 65% / 0.3);
+    --shadow-gold-glow: 0 0 30px hsl(45 100% 58% / 0.4);
+    
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out;
+  }
+  
+  .animate-slide-in-right {
+    animation: slide-in-right 0.8s ease-out;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-gradient {
+    background-size: 400% 400%;
+    animation: gradient-shift 8s ease infinite;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-lg;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-glow;
+  }
+  
+  .hover-gold-glow {
+    @apply transition-all duration-300 hover:shadow-gold-glow;
+  }
+  
+  .link-underline {
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-secondary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+  
+  .card-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .card-hover:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-4px);
+  }
+  
+  .parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px hsl(var(--secondary) / 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 30px hsl(var(--secondary) / 0.6));
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
