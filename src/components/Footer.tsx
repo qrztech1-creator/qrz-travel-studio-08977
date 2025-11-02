@@ -94,7 +94,7 @@ const Footer = () => {
                 <Phone className="h-5 w-5 text-secondary flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-accent-foreground/90 font-medium">
-                    (21) 99999-9999
+                    (27) 99993-6682
                   </p>
                   <p className="text-accent-foreground/60 text-sm">
                     Segunda à sábado — 08:00 às 19:30
@@ -127,10 +127,10 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-secondary flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-accent-foreground/90 font-medium">
-                    Rio de Janeiro, RJ
+                    Rua Doutor Jairo de Matos Pereira 600
                   </p>
                   <p className="text-accent-foreground/60 text-sm">
-                    Brasil
+                    Ed. Praia Corporate, Sala 406., Vila Velha, ES
                   </p>
                 </div>
               </li>

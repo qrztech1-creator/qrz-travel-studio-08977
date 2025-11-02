@@ -10,7 +10,7 @@ const CTASection = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/5521999999999", "_blank");
+    window.open("https://wa.me/5527999936682", "_blank");
   };
 
   return (

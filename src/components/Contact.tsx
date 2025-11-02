@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Instagram, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   const handleWhatsApp = () => {
-    window.open("https://wa.me/5521999999999", "_blank");
+    window.open("https://wa.me/5527999936682", "_blank");
   };
 
   const handleEmail = () => {
@@ -11,7 +11,7 @@ const Contact = () => {
   };
 
   const handleInstagram = () => {
-    window.open("https://instagram.com/othiagoqrz", "_blank");
+    window.open("https://www.instagram.com/othiagoqrz/", "_blank");
   };
 
   return (
@@ -43,7 +43,7 @@ const Contact = () => {
               </div>
               
               <h3 className="text-xl font-bold mb-3 text-accent">Telefone</h3>
-              <p className="text-muted-foreground mb-2 font-medium">(21) 99999-9999</p>
+              <p className="text-muted-foreground mb-2 font-medium">(27) 99993-6682</p>
               <p className="text-sm text-muted-foreground/70">Segunda à sábado — 08:00 às 19:30</p>
             </div>
 
@@ -81,7 +81,7 @@ const Contact = () => {
             </div>
             
             <h3 className="text-2xl font-bold mb-2 text-accent">Localização</h3>
-            <p className="text-lg text-muted-foreground">Rio de Janeiro, RJ — Brasil</p>
+            <p className="text-lg text-muted-foreground">Rua Doutor Jairo de Matos Pereira 600, Ed. Praia Corporate, Sala 406., Vila Velha, ES</p>
           </div>
 
           {/* CTAs */}
