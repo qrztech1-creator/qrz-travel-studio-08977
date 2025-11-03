@@ -4,14 +4,18 @@ import heroImage from "@/assets/hero-travel.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
-    const element = document.getElementById("contato");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    // Abrir link direto para WhatsApp em vez de rolar para a seção de contato
+    window.open(
+      "https://api.whatsapp.com/send/?phone=5527999936682&text&type=phone_number&app_absent=0",
+      "_blank"
+    );
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/5527999936682", "_blank");
+    window.open(
+      "https://api.whatsapp.com/send/?phone=5527999936682&text&type=phone_number&app_absent=0",
+      "_blank"
+    );
   };
 
   return (
@@ -33,7 +37,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 z-10 text-center text-white py-32">
         <div className="max-w-5xl mx-auto space-y-10 animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold leading-tight text-balance tracking-tight drop-shadow-lg">
-            <span className="inline-block backdrop-blur-sm bg-black/5 px-4 py-2 rounded-2xl">
+            <span className="inline-block px-4 py-2 rounded-2xl">
               Transforme seus{" "}
               <span className="highlight-word">
                 sonhos em realidade
@@ -50,7 +54,7 @@ const Hero = () => {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="group relative overflow-hidden bg-gradient-to-r from-accent via-accent to-primary hover:shadow-xl text-white uppercase font-bold text-lg px-10 py-7 rounded-full shadow-2xl transition-all duration-300 hover:scale-105"
+              className="group relative overflow-hidden bg-gradient-to-r from-accent/80 via-primary/60 to-primary/80 hover:from-accent hover:via-primary/80 hover:to-primary text-white uppercase font-bold text-lg px-10 py-7 rounded-full shadow-2xl transition-all duration-500 hover:scale-105 hover:shadow-accent/25"
             >
               <span className="relative z-10 flex items-center gap-2">
                 <Plane className="h-5 w-5 group-hover:translate-x-1 transition-transform" />

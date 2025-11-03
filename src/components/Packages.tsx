@@ -74,10 +74,11 @@ const packages = [
 
 const Packages = () => {
   const scrollToContact = () => {
-    const element = document.getElementById("contato");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    // Abrir link direto para WhatsApp em vez de rolar para a seção de contato
+    window.open(
+      "https://api.whatsapp.com/send/?phone=5527999936682&text&type=phone_number&app_absent=0",
+      "_blank"
+    );
   };
 
   return (
@@ -113,7 +114,7 @@ const Packages = () => {
                     alt={pkg.destination}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-accent/70 via-accent/30 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-accent/40 to-transparent" style={{ height: '40%' }}></div>
                   
                   {/* Exclusive Badge */}
                   <div className="absolute top-4 right-4 bg-accent/70 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-lg">

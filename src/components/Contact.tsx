@@ -3,7 +3,10 @@ import { Mail, Phone, MapPin, Instagram, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   const handleWhatsApp = () => {
-    window.open("https://wa.me/5527999936682", "_blank");
+    window.open(
+      "https://api.whatsapp.com/send/?phone=5527999936682&text&type=phone_number&app_absent=0",
+      "_blank"
+    );
   };
 
   const handleEmail = () => {

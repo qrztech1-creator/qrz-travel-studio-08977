@@ -1,5 +1,5 @@
 import { Award, Heart, Shield, Star } from "lucide-react";
-import teamImage from "@/assets/team-qrz.jpg";
+const teamImage = "https://i.postimg.cc/NfJRy3Sr/ass.png";
 
 const About = () => {
   return (
@@ -29,10 +29,7 @@ const About = () => {
               alt="Equipe Turismos QRZ"
               className="relative rounded-3xl shadow-2xl w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-500"
             />
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl border border-border">
-              <div className="text-4xl font-bold text-primary">10+</div>
-              <div className="text-sm text-muted-foreground font-medium">Anos de Experiência</div>
-            </div>
+
           </div>
           
           <div className="space-y-8 animate-slide-in-right">

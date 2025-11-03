@@ -76,21 +76,7 @@ const WhyChoose = () => {
           })}
         </div>
 
-        {/* Premium Stats */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-20">
-          <div className="text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
-            <div className="text-5xl font-bold text-secondary mb-2">10+</div>
-            <div className="text-white/80">Anos de Experiência</div>
-          </div>
-          <div className="text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
-            <div className="text-5xl font-bold text-secondary mb-2">5000+</div>
-            <div className="text-white/80">Clientes Satisfeitos</div>
-          </div>
-          <div className="text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
-            <div className="text-5xl font-bold text-secondary mb-2">100+</div>
-            <div className="text-white/80">Destinos Exclusivos</div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

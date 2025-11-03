@@ -33,10 +33,11 @@ const services = [
 
 const Services = () => {
   const scrollToContact = () => {
-    const element = document.getElementById("contato");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    // Abrir link direto para WhatsApp em vez de rolar para a seção de contato
+    window.open(
+      "https://api.whatsapp.com/send/?phone=5527999936682&text&type=phone_number&app_absent=0",
+      "_blank"
+    );
   };
 
   return (
