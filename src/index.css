@@ -19,13 +19,13 @@ All colors MUST be HSL.
     --primary-light: 225 100% 97%;
     --primary-glow: 225 90% 65%;
     
-    /* Secondary - Dourado Suave */
-    --secondary: 45 100% 58%;
-    --secondary-foreground: 220 20% 15%;
-    --secondary-dark: 38 90% 45%;
+    /* Secondary - Laranja Corporativo */
+    --secondary: 24 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-dark: 24 100% 45%;
     
-    /* Accent - Azul Profundo */
-    --accent: 220 40% 20%;
+    /* Accent - Laranja Corporativo */
+    --accent: 24 100% 50%;
     --accent-foreground: 0 0% 100%;
     
     /* Neutral Colors */
@@ -49,9 +49,9 @@ All colors MUST be HSL.
     
     /* Premium Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(225 90% 50%), hsl(225 90% 65%));
-    --gradient-gold: linear-gradient(135deg, hsl(45 100% 58%), hsl(38 90% 45%));
-    --gradient-cta: linear-gradient(90deg, hsl(225 90% 50%), hsl(16 100% 60%));
-    --gradient-cta-animated: linear-gradient(-45deg, hsl(225 90% 50%), hsl(225 90% 65%), hsl(16 100% 60%), hsl(38 90% 45%));
+    --gradient-gold: linear-gradient(135deg, hsl(24 100% 50%), hsl(24 100% 45%));
+    --gradient-cta: linear-gradient(90deg, hsl(225 90% 50%), hsl(24 100% 50%));
+    --gradient-cta-animated: linear-gradient(-45deg, hsl(225 90% 50%), hsl(225 90% 65%), hsl(24 100% 50%), hsl(24 100% 45%));
     --gradient-overlay: linear-gradient(135deg, hsl(220 40% 20% / 0.85), hsl(225 90% 50% / 0.7));
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(225 100% 98%));
     --gradient-dark: linear-gradient(135deg, hsl(220 50% 12%), hsl(220 40% 20%));
@@ -63,7 +63,7 @@ All colors MUST be HSL.
     --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.06);
     --shadow-card-hover: 0 12px 40px rgba(0, 0, 0, 0.12);
     --shadow-glow: 0 0 40px hsl(225 90% 65% / 0.3);
-    --shadow-gold-glow: 0 0 30px hsl(45 100% 58% / 0.4);
+    --shadow-gold-glow: 0 0 30px hsl(24 100% 50% / 0.4);
     
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -161,11 +161,11 @@ All colors MUST be HSL.
   }
   
   .highlight-word {
-    background: linear-gradient(90deg, hsl(45 100% 58%), hsl(38 90% 45%));
+    background: linear-gradient(90deg, hsl(24 100% 60%), hsl(24 100% 50%));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+    text-shadow: 0 2px 12px rgba(255, 108, 0, 0.3);
     display: inline-block;
   }
 }
@@ -205,10 +205,10 @@ All colors MUST be HSL.
 
 @keyframes glow {
   0%, 100% {
-    filter: drop-shadow(0 0 15px hsl(var(--secondary) / 0.4));
+    filter: drop-shadow(0 0 15px hsl(24 100% 50% / 0.5));
   }
   50% {
-    filter: drop-shadow(0 0 30px hsl(var(--secondary) / 0.6));
+    filter: drop-shadow(0 0 30px hsl(24 100% 50% / 0.8));
   }
 }
 

@@ -44,7 +44,8 @@ const Contact = () => {
               
               <h3 className="text-xl font-bold mb-3 text-accent">Telefone</h3>
               <p className="text-muted-foreground mb-2 font-medium">(27) 99993-6682</p>
-              <p className="text-sm text-muted-foreground/70">Segunda à sábado — 08:00 às 19:30</p>
+              <p className="text-sm text-muted-foreground/70">Segunda à sábado</p>
+              <p className="text-sm text-muted-foreground/70">08:00 às 19:30</p>
             </div>
 
             <div className="group relative bg-card rounded-3xl p-8 hover-lift shadow-card border border-border overflow-hidden text-center">

@@ -35,9 +35,8 @@ const Hero = () => {
           <h1 className="text-6xl md:text-8xl font-bold leading-tight text-balance tracking-tight">
             Transforme seus{" "}
             <span className="highlight-word">
-              sonhos
-            </span>{" "}
-            em realidade
+              sonhos em realidade
+            </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-white/95 max-w-3xl mx-auto text-balance leading-relaxed font-light">
@@ -49,7 +48,7 @@ const Hero = () => {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="group relative overflow-hidden bg-gradient-to-r from-secondary to-secondary-dark hover:shadow-gold-glow text-secondary-foreground uppercase font-bold text-lg px-10 py-7 rounded-full shadow-2xl transition-all duration-500 hover:scale-105 animate-gradient"
+              className="group relative overflow-hidden bg-gradient-to-r from-accent via-accent to-primary hover:shadow-lg text-white uppercase font-bold text-lg px-10 py-7 rounded-full shadow-2xl transition-all duration-300 hover:scale-105"
             >
               <span className="relative z-10 flex items-center gap-2">
                 <Plane className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -70,12 +69,12 @@ const Hero = () => {
           {/* Trust Indicators */}
           <div className="flex flex-wrap justify-center gap-8 pt-12 text-white/80">
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-secondary rounded-full animate-glow"></div>
+              <div className="w-2 h-2 bg-accent rounded-full animate-glow"></div>
               <span className="text-sm font-medium">Consultoria Especializada</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-secondary rounded-full animate-glow"></div>
-              <span className="text-sm font-medium">Segunda à sábado — 08:00 às 19:30</span>
+              <div className="w-2 h-2 bg-accent rounded-full animate-glow"></div>
+              <span className="text-sm font-medium">Atendimento Personalizado</span>
             </div>
           </div>
         </div>

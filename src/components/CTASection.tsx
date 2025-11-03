@@ -15,16 +15,14 @@ const CTASection = () => {
 
   return (
     <section className="relative py-32 overflow-hidden">
-      {/* Animated gradient background */}
-      <div
-        className="absolute inset-0 animate-gradient"
-        style={{ background: 'var(--gradient-cta-animated)' }}
-      ></div>
-      
-      {/* Parallax decorative elements */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-20">
-        <Plane className="absolute top-20 right-20 h-32 w-32 text-white animate-float" />
-        <Sparkles className="absolute bottom-20 left-20 h-24 w-24 text-white animate-float" style={{ animationDelay: '1s' }} />
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1920&q=80"
+          alt="Viagem"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-accent/70"></div>
       </div>
       
       <div className="container mx-auto px-4 text-center relative z-10">
@@ -32,7 +30,7 @@ const CTASection = () => {
           <h2 className="text-5xl md:text-7xl font-bold text-white leading-tight">
             Pronto para sua próxima
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-secondary to-white">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-accent to-white">
               aventura exclusiva?
             </span>
           </h2>
@@ -45,7 +43,7 @@ const CTASection = () => {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="group relative overflow-hidden bg-white hover:bg-white/90 text-primary uppercase font-bold text-xl px-12 py-8 rounded-full shadow-2xl hover:shadow-gold-glow transition-all duration-500 hover:scale-110"
+              className="group relative overflow-hidden bg-white hover:bg-white/90 text-primary uppercase font-bold text-xl px-12 py-8 rounded-full shadow-2xl hover:shadow-lg transition-all duration-300 hover:scale-110"
             >
               <Plane className="mr-3 h-6 w-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               <span className="relative z-10">SOLICITAR ORÇAMENTO VIP</span>
@@ -70,7 +68,7 @@ const CTASection = () => {
             </div>
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 bg-white rounded-full shadow-lg animate-glow"></div>
-              <span className="font-semibold">Segunda à sábado — 08:00 às 19:30</span>
+              <span className="font-semibold">Atendimento Personalizado</span>
             </div>
           </div>
         </div>
