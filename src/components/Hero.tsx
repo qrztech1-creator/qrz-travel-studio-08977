@@ -31,16 +31,16 @@ const Hero = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center text-white py-32">
-        <div className="max-w-5xl mx-auto space-y-10 animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold leading-tight text-balance tracking-tight">
+        <div className="max-w-5xl mx-auto space-y-10 animate-fade-in backdrop-blur-sm bg-black/10 rounded-3xl p-8 shadow-lg">
+          <h1 className="text-6xl md:text-8xl font-bold leading-tight text-balance tracking-tight drop-shadow-md">
             Transforme seus{" "}
             <span className="highlight-word">
               sonhos em realidade
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-white/95 max-w-3xl mx-auto text-balance leading-relaxed font-light">
-            Experiências premium personalizadas — passagens, cruzeiros de luxo,
+          <p className="text-xl md:text-2xl text-white/95 max-w-3xl mx-auto text-balance leading-relaxed font-light drop-shadow-sm">
+            Experiências personalizadas — passagens, cruzeiros de luxo,
             pacotes exclusivos e atendimento VIP em cada detalhe.
           </p>
 
@@ -48,11 +48,11 @@ const Hero = () => {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="group relative overflow-hidden bg-gradient-to-r from-accent via-accent to-primary hover:shadow-lg text-white uppercase font-bold text-lg px-10 py-7 rounded-full shadow-2xl transition-all duration-300 hover:scale-105"
+              className="group relative overflow-hidden bg-gradient-to-r from-accent via-accent to-primary hover:shadow-xl text-white uppercase font-bold text-lg px-10 py-7 rounded-full shadow-2xl transition-all duration-300 hover:scale-105"
             >
               <span className="relative z-10 flex items-center gap-2">
                 <Plane className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                SOLICITAR ORÇAMENTO PREMIUM
+                SOLICITAR ORÇAMENTO
               </span>
             </Button>
             <Button

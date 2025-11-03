@@ -98,27 +98,6 @@ const Packages = () => {
           </p>
         </div>
 
-        {/* Airlines Carousel */}
-        <div className="mb-20">
-          <h3 className="text-2xl font-bold text-center text-accent mb-8">
-            Parceiros Premium
-          </h3>
-          <div className="flex flex-wrap justify-center items-center gap-12 max-w-6xl mx-auto">
-            {airlines.map((airline, index) => (
-              <div
-                key={index}
-                className="grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 hover:scale-110"
-              >
-                <img
-                  src={airline.logo}
-                  alt={airline.name}
-                  className="h-12 w-auto object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Packages Grid */}
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -137,7 +116,7 @@ const Packages = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-accent via-accent/50 to-transparent opacity-80"></div>
                   
                   {/* Exclusive Badge */}
-                  <div className="absolute top-4 right-4 bg-gradient-to-r from-secondary to-secondary-dark px-4 py-2 rounded-full flex items-center gap-2 shadow-lg">
+                  <div className="absolute top-4 right-4 bg-accent/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-lg">
                     <BadgeCheck className="h-4 w-4 text-white" />
                     <span className="text-xs font-bold text-white">Exclusivo QRZ</span>
                   </div>
