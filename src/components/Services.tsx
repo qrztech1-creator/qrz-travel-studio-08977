@@ -71,7 +71,7 @@ const Services = () => {
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-card/80"></div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-b from-transparent to-card"></div>
                 </div>
                 
                 <div className="p-6 flex flex-col flex-grow">

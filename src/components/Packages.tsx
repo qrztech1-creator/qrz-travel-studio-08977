@@ -113,10 +113,10 @@ const Packages = () => {
                     alt={pkg.destination}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-accent via-accent/50 to-transparent opacity-80"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-accent/70 via-accent/30 to-transparent"></div>
                   
                   {/* Exclusive Badge */}
-                  <div className="absolute top-4 right-4 bg-accent/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-lg">
+                  <div className="absolute top-4 right-4 bg-accent/70 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-lg">
                     <BadgeCheck className="h-4 w-4 text-white" />
                     <span className="text-xs font-bold text-white">Exclusivo QRZ</span>
                   </div>

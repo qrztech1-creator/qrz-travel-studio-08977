@@ -31,11 +31,13 @@ const Hero = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center text-white py-32">
-        <div className="max-w-5xl mx-auto space-y-10 animate-fade-in backdrop-blur-sm bg-black/10 rounded-3xl p-8 shadow-lg">
-          <h1 className="text-6xl md:text-8xl font-bold leading-tight text-balance tracking-tight drop-shadow-md">
-            Transforme seus{" "}
-            <span className="highlight-word">
-              sonhos em realidade
+        <div className="max-w-5xl mx-auto space-y-10 animate-fade-in">
+          <h1 className="text-6xl md:text-8xl font-bold leading-tight text-balance tracking-tight drop-shadow-lg">
+            <span className="inline-block backdrop-blur-sm bg-black/5 px-4 py-2 rounded-2xl">
+              Transforme seus{" "}
+              <span className="highlight-word">
+                sonhos em realidade
+              </span>
             </span>
           </h1>
 
